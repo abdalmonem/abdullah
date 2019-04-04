@@ -12,9 +12,13 @@ a, a:visited, a:hover, a:active {
 
 .mainContainer{
     width:90%;
-    margin: 20px 5%;
+    padding: 0px 5%;
     float: right;
     text-align: center;
+    z-index: 5;
+    position: fixed;
+    max-height: 100%;
+    overflow: scroll;
 }
 
 .heightlight{
@@ -22,6 +26,7 @@ a, a:visited, a:hover, a:active {
     width:auto;
     float: right;
     padding: 0px 2%;
+    margin-top: 20px;
 }
 .headTitle {
     width:100%;
@@ -83,4 +88,13 @@ a, a:visited, a:hover, a:active {
 .submitBtn:active{
     color: #fff;
     background: #555;
+}
+
+.bgConteiner{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
 }
